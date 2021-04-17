@@ -1,0 +1,100 @@
+<html>
+    <head>
+        <title>Clase CSS</title>   
+
+        <script type="text/javascript">
+
+            function validarFormulario(){
+                var nomCliente = document.getElementById("txtNombCliente").value;
+                
+                if(nomCliente=="")
+                {
+                    alert("El nombre del cliente no se encuentra informado");
+                }
+                else{
+                    alert("Nombre ingresado correctamente")
+                }
+            }
+
+        </script>
+        <style>
+
+            /* Marcado con etiqueta h1,h2,h3,h4{
+                color: royalblue;
+            }
+            Marcado con clase .negrita{
+
+                font-weight: bold;/**Negrita*/
+            /*} */
+
+
+            input[type=submit]{
+                width: 100%;
+                padding:14px 20px;
+                margin: 8px 0;
+                color: white;
+                background-color: lightcoral;
+                /* display: inline-block; */
+                border-radius: 4px;
+                border: none /* 1px solid #ccc */ ;
+                cursor: pointer;
+                
+            }
+            input[type=submit]:hover{
+                background-color: teal;
+            }
+            input[type=text],select{
+                width: 100%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                display: inline-block;
+                border-radius: 4px;
+                border: 1px solid #ccc;
+                box-sizing: border-box;
+            }
+            div{
+                border-radius: 10px ;
+                padding: 20px;
+                background-color:  lavenderblush;
+            }
+
+        </style> 
+
+        
+    </head>
+    <body>
+        
+        <div>
+            <form action="">
+
+                <label class="negrita" for="txtNombCliente">Nombre de Cliente</label>
+                <input type="text" id="txtNombCliente" name="txtNombCliente" placeholder="Ingrese Nombre de Cliente">
+
+                <label for="txtDescrpCliente">Descripcion de Cliente</label>
+                <input type="text" id="txtDescrpCliente" name="txtDescrpCliente" placeholder="Ingrese Descripcion del cliente">
+
+                <label for="dpGustos">Selecciona Gustos</label>
+                <select name="dpGustos" id="dpGustos">
+                    <option value="1">Negocios</option>
+                    <option value="2">Deportes</option>
+                    <option value="3">Tiempo Libre</option>
+                    <option value="4">Otros</option>
+                </select>
+
+                <label for="dpPagos">Selecciona Pagos</label>
+                <select name="dpPagos" id="dpPagos">
+                    <option value="1">Corrienta</option>
+                    <option value="2">Crédito</option>
+                    <option value="3">Debito</option>
+                    <option value="4">Contado</option>
+                </select>
+
+                <input type="submit" onclick="validarFormulario()" value="Grabar">
+            </form>
+        </div>
+
+    </body>
+    <footer>
+
+    </footer>
+</html>

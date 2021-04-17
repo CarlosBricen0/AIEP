@@ -1,0 +1,121 @@
+<html>
+    <head>
+        <title>Nombre de la página Web</title>
+
+    </head>
+
+    <body>
+        <h1>Lista de Pasos para el registro</h1>
+        
+            <ul>
+                <li>Ingrese datos del usuario</li>
+                <li>Seleccione tipo de cuenta</li>
+                <li>Seleccione datos de correo</li>
+                <li>Seleccione Marca de Vechiulo</li>
+            </ul>
+            <ol>
+                <li>Ingrese datos del usuario</li>
+                <li>Seleccione tipo de cuenta</li>
+                <li>Seleccione datos de correo</li>
+                <li>Seleccione Marca de Vechiulo</li>
+            </ol>
+
+            <dl>
+                <dt>Validaciones</dt>
+                <dd>--Valores nulos</dd>
+                <dd>usuarios con menose 6 caracteres</dd>
+                <dd>Procesos</dd>
+                <dd>- Carga de Datos</dd>
+                <dd>-Respuesta </dd>
+            </dl>
+            
+        <form action="clase2.html" method="GET">
+            <label id="lblusuario" for="txtusuario">Ingrese usuario :</label> <br>
+            <input type="text" id="txtUsuario" placeholder="Ingresa el usuario con cuidado"> <br>
+
+            <label id="lblPassword" for="txtPassword">Ingrese Password :</label> <br>
+            <input type="text" id="txtPassword" placeholder="Ingresa el usuario con cuidado"> <br>
+
+
+            <label >Selecciona Tipo de Cuenta :</label> <br>
+            <input type="radio" name="rd" value="1" > Cuenta Corriente <br>
+            <input type="radio"name="rd" > Cuenta Vista <br>
+            <input type="radio" name="rd" > Cuenta Ahorro <br>
+
+            <label id="lblCuenta" for="txt">Selecciona Tipo de Correo :</label> <br>
+            <input type="checkbox" value="gmail" > Gmail <br>
+            <input type="checkbox" value="hotmail" > Hotmail<br>
+            <input type="checkbox" value="outlook" > Outlook <br>
+
+
+            <select name="autos" id="autos">
+                <option value="1">nissan</option>
+                <option value="2">ford</option>
+                <option value="3">toyota</option>
+                <option value="4">suzuki</option>
+                <option value="5">bmw</option>
+            </select><br>
+
+            <input type=button value="Enviar"> <br> <!--Boton normal que ejecuta una accion-->
+            <input type="submit" value="Enviar"> <br> <!-- el submit trabaja como un archivo que guarda toda la informacion, conjunto con el formulario y se envia al servidor para ser procesada ( metodo GET) -->
+
+
+        </form>
+
+        <!-- Clase 1 -->
+       <!--  <button>boton</button>
+        <input type="button" value="Ingresar" >
+        <input type="checkbox" value="Si" >
+
+        <input type="radio" value="ok" > -->
+
+        <!-- <h1>Primer Titulo H1</h1>
+        <p>primer parrafo <strong>Strong</strong></p>
+        
+        <h2>Segundo Titulo H2</h2>
+        <h2>Segundo Titulo H2</h2>
+        <em>enmarcacion importante para el seo</em>
+        <strong>le da un destaque a la página</strong>
+        <b>Negrita</b>
+        <i>cursiva</i> -->
+        <!-- EJEMPLO DE TABLA-->
+       <!--  <table border="1">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td colspan="3"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                 <tr>
+                     <td colspan="3">
+                        <input type="button" value="Ingrsar">
+                     </td>
+                    
+                  </tr>
+            </tbody>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table> -->
+
+
+
+    </body>
+    <footer>
+        final de pagina
+    </footer>
+</html>
