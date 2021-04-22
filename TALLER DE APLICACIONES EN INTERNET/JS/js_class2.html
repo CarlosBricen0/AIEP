@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title></title>
+        <script type="text/javascript">
+            function calcularTabla (){
+                let number = document.getElementById("inputNumber").value;
+                if(!Number.isNaN(number)){ //Funcion Number.isNaN si es true significa que no es un numero, si arroja falso es un número
+                    debugger
+                    let msje = ""
+                    for (let index = 0; index < 10; index++) {
+                        msje  = msje + ">> " + number + " X " + index + " = " + (parseInt(number) *index) + "\n" ;
+                       
+                    }  
+                    alert(msje)      
+                }
+                else{
+                    alert("El valor ingresado es incorrecto")
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <label>Ingrese un numero cualquiera</label>
+        <input type="number" id="inputNumber">
+        <button id="btnAccion" onclick="calcularTabla()">Calcular</button>
+    </body>
+</html>

@@ -1,0 +1,384 @@
+<html>
+    <head>
+        <title>Clase Javascript</title>
+        <script type="text/javascript">
+            
+
+
+
+
+            /* function rutina(){ */
+              //Comentario En Javascriot una sola linea
+                /*
+                Comentarios en varias 
+                lineas
+                */
+
+                var dato ;//Declaracion de variable
+                let variableLet ; //Declaracion de variable local
+                const datoConstante ; // Declaracion de  constante
+                var var1,var2,var3,var4; //Declaracion variable en linea
+                var var5 , var6=23 , var7 = var9 = 23;
+                //Para la asignacion de valor de una variable
+
+                var1 = 10;
+
+                //Tratamiento de datos (definicion)
+
+                var numerito =123;
+                numerito = 0.45
+
+                var nombre = "Juan" ;//String
+                var bandera = true;//boolean
+
+
+                aler(typeof(numerito));
+                /* OPERADORES ARITMETICOS
+
+                SUMA : +
+                RESTA : -
+                MULT : *
+                DIVISION : /
+                RESTO : %                
+                */
+
+                numerito = 20 //Es lo mismo que : numerito = numerito +20 
+                numerito += 20;
+                numerito -= 20;
+                numerito *= 20;
+                numerito /= 20;
+                numerito %= 20;
+
+                var nombre = "Nombre" + "Apellido";
+
+                var ingresoValor = prompt("Instroduce tu nombre de usuario");
+                alert("El valor de ingreso es " + ingresoValor);
+
+                //Metodo de conversion
+                var numerito12 = parseInt("20000"); //Conversion texto a entero
+                let numerico21 = parseFloat("7.912123");//Conversion texto a decimal
+
+                numerito12 = parseInt(prompt("Ingrese un numero"));
+                numerito12 = parseInt(document.getElementById("id"));//Obtendo un elemento 
+
+                function testingTryCatch (){
+                    try
+                    {
+                        //nivel de intento de proceso propenso a error
+                        var numPotencia  = noexisto;
+                        alert("Proceso correcto!")
+                    }catch(error){
+                        //captura la excepcion y tratamiento de la misma    
+                        if(e instanceof TypeError)
+                        {
+
+                        }
+                        alert("Error" + error)
+                    }
+                    finally{
+                        //Bloque que se ejecuta independiente del exito o error
+                        alert("Cerrando el bloque try")
+                    }
+
+                }
+               
+                //OPERACION CONDICIONAL
+
+                /*
+                 
+                    OPERADORES COMPARACION
+
+                    == es igual
+                    === contenido  y tipo igual a 
+                    != Distinto de 
+                    !== Contenido o tipo diferente a
+                    > Mayor que
+                    >= Mayor igual que
+                    <=Menos igual que
+                    < Menor que
+                    <= Menor igual que
+
+                    && Y
+                    || O
+                    ! NOT
+
+                 ***/
+
+                var condicional = true
+                //IF simple
+                 if(condicional)
+                 {
+                    //Ejecucion simple
+                 }
+                 else{
+                     // false 
+                 }
+
+                 //IF compuesto
+                 if(condicional){
+
+                 }else if(condicional){
+                    //Primer bloque
+                 } else if(condicional){
+                    //SEgundo bloque
+                 }
+
+
+                 switch(condicional){
+                     case 1: 
+                        break;
+                     case 2: 
+                        break;
+                     case 3: 
+                        break;
+                     case 4: 
+                        break;
+                     case 5: 
+                        break;
+
+                    default:
+                        break;
+                 }
+
+                 //BLoques iterativosç
+
+                 do{ //Se ejecuta al menos una vez, independiente de la condicion
+                     //Instrucciones de ejecucion iterativas y controladas por condiciones
+                 }while (numerito ==2)
+                 {
+
+                 }
+
+                 while(numerito ==1){ //Se ejecuta de 0 a n veces, dependiente de la condicion
+                    //INstrucciones de ejecucion ierativas controlados por la condicion
+                 }  
+                 
+
+                 for (let index = 0; index < 10; index++) {
+                     // Itera una cantidad determinada de veces
+                 }
+
+                 //Recorrido
+                 /* array.forEach(element => {
+                     
+                 }); */
+                 
+
+                 //Funcion y Procedimiento
+
+                 function nombreFuncion()
+                 {
+                    return 20 
+                    //retorna un valor , por eso es una funcion
+                 }
+
+                 function nomProcedimiento ( ){
+                    //PRocedimiento no retorna valor
+                 }
+
+                function nomFuncionParametrizada(v1,v2){
+                    return v1 +v2
+                }
+
+                function simplecita(v2,v2){
+                    return v1*v2
+                }
+
+                var multiplicacion = (v1,v2) =>{
+                    return v1/v2;
+                }
+
+                var multiplicacion2 = (v1,v2) => v1*v2;
+
+
+                var Persona = {
+                    nombre : "Carlos",
+                    apellido : "Briceño",
+                    edad : 27,
+                    curso : "Informatica",
+                    nombreyCurso : function(){
+                         return this.nombre + this.curso;
+                    }
+                }
+
+                alert("Objeto Persona : " + Persona.nombreyCurso)
+
+                 let nombreCurso = Persona.nombreyCurso()
+
+
+
+
+
+                 //Estructuras Condicionales o sentencias 
+
+                 
+                /*
+                RESPALDO PROFE
+
+                        var nombreDeLaVariable; // Declaracion de vairable
+
+                let nombreDeLaVariable2; // Delcaracion de variable local
+
+                const nombreDeConstante = 9; // Declarion de una constante
+
+                var var1, var2, var3, var4; // Declaracion de variable en linea
+
+                var var5, var6=65, var7=var9=23;  // Declaracion de variable y asignacion en linea
+
+            
+
+                // Para la asignacion de valor a una variable
+
+
+
+                nombreDeLaVariable = 10;
+
+
+
+                // Tratamiento de datos (definicion)
+
+
+
+                var numerito = 123; // Numero entero
+
+                numerito = 0.45; // Numero flotante.
+
+
+
+                var nombre = "Juan"; Nombre ='Claudia'; // Cadena o String
+
+                var bandera = true; // Booleanos (V o F)
+
+
+
+                // Evaluando existencia de variable y tipo
+
+
+
+                alert(typeof(numerito));
+
+
+
+                /* OPERADORES: ARITMETICOS 
+
+                    SUMA: +
+
+                    RESTA: -
+
+                    MULTIPLICACION : *
+
+                    DIVISION : /
+
+                    RESTO : %
+
+              
+
+
+
+                numerito=20;
+
+
+
+                numerito += 20; // Es lo mismo que: numerito = numerito + 20;
+
+                numerito -= 20;
+
+                numerito *=20;
+
+                numerito /=20;
+
+                numerito %=20;
+
+
+
+                  */
+
+
+
+                // OPERADOR: CONCATENACION
+
+
+/* 
+                var nombre = "Nombre " + "Apellido"; // Nombre Apellido
+
+
+
+                // INTERACCION: Solicitar valor y mostrar valor
+
+
+
+                var ingresoValor = prompt("Introduce tu nombre de usuario");
+
+                alert("El valor ingreso es " + ingresoValor);
+
+                
+
+                // Metodo de conversion
+
+
+
+                var numerito12 = parseInt("20000");
+
+                numerito12 = parseFloat("7.121212");
+
+
+
+                numerito12 = parseInt(prompt("Ingrese un numero"));
+
+                numerito12 = parseInt(document.getElementById("idEtiqueta").value);
+
+                
+
+                // Control de excepcion try catch
+
+
+
+                try{
+
+                    // nivel de intento proceso propenso a error
+
+                }catch(e){
+
+                    // Captura de la excepcion y tratamiento de la misma
+
+                }finally{
+
+                    // Bloque que se ejecuta independiente del exito o error.
+
+                }
+
+
+
+                // Contro de excepcion
+
+
+
+                function testingTryCatch(){
+
+                    try{
+
+                        var numPotencia = noexisto;
+
+                        alert("Proceso correcto!");
+
+                    }catch(e){
+
+                        alert("ERROR: " + e)
+
+                    }finally{
+
+                        alert("Cerrando el bloque try");
+
+                */ 
+                 
+                              
+           /*  } */
+        </script>
+    </head>
+    <body>
+        <button onclick="testingTryCatch()">LLamado de funcion</button>
+       <!--  <div onsubmit="rutina()"></div> -->
+        
+
+    </body>
+</html>

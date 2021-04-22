@@ -1,0 +1,80 @@
+<html>
+    <head>
+        <title>Guía número uno  - II</title>
+        <meta http-equiv=”Content-Type” content=”text/html; charset=UTF-8″ />
+        <style type="text/css"> BODY{ font-family: Arial, Helvetica, sans-serif; } </style>
+        <style>
+
+            .bold{
+                font-weight: bold;
+            }
+            p{
+                width: 100%;
+              /*   font-size: 12px; */
+            }
+
+            body{
+                
+            }
+            
+            input[type="submit"]{
+                padding: 14px 25px;
+                margin: 10px 0;
+                background-color: blue;
+                border-radius: 6px;
+                border: 2px;
+
+            }
+            input[type="submit"]:hover{
+                
+                background-color: rebeccapurple;
+            }
+            input,select{
+                padding: 14px 25px;
+                margin: 10px 0;
+                display: inline-block;
+                border-radius: 6px;
+                border : 2px solid #c4c4c4;
+                box-sizing: border-box;
+
+            }
+        </style>
+    </head>
+    <body>
+
+    <h1>Formulario de Registro</h1>
+
+    <div>
+        <form action="">
+
+            <label id="lblCuenta" for="txt"><b>Seleccione</b></label> 
+            <input type="checkbox" value="1" >Me gusta vacacionar
+            <input type="checkbox" value="2" >Me gusta Jugar Deportes
+            <input type="checkbox" value="3" >Me gusta estudiar <br>
+
+            <label for="txtNombCliente"><b>Ingrese de Nombre</b></label>
+            <input type="text" id="txtNombCliente" name="txtNombCliente"  placeholder="Puede ingresar tu nombre."><br>
+
+            <label for="txtRutCliente"><b>Ingreso de Rut</b></label>
+            <input type="text" id="txtRutCliente" name="txtRutCliente"  placeholder="Puedes ingresar tu rut"><br>
+
+            <label for="txtClaveCliente"><b>Ingreso de Clave</b></label>
+            <input type="text" id="txtClaveCliente" name="txtClaveCliente"  placeholder="Puedes ingresar tu password"><br>
+
+            <label for="modo"><b>Selecciona modo</b></label>
+            <select name="registro" id="registro" >
+                <option value="1">Registro directo</option>
+                <option value="2">Registro Indirecto</option>
+                <option value="3">Otros</option>
+            </select><br>
+
+            <label><b>Confirme</b></label>
+            <input type="radio" name="rd" value="1" > Si
+            <input type="radio"name="rd" value="1" > No<br>
+
+            <input type="submit" onclick="validarFormulario()" value="Registrar">
+        </form>
+        <p>Final de la página</p>
+    </div>
+    </body>
+</html>

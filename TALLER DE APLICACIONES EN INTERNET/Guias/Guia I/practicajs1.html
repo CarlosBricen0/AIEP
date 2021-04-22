@@ -1,0 +1,99 @@
+<html>
+    <head>
+        <title>Guía número uno - III </title>
+        <meta http-equiv=”Content-Type” content=”text/html; charset=UTF-8″ />
+       <!--  <style type="text/css"> BODY{ font-family: Arial, Helvetica, sans-serif; } </style> -->
+        <script type="text/javascript">
+
+          function showName(){
+              let name =  document.getElementById("inputNombre").value
+              alert(name);
+          }
+
+          function showLastName(){
+              let apellidoPaterno = document.getElementById("inputApePaterno").value
+              let apellidoMaterno = document.getElementById("inputApeMaterno").value
+              
+              if(typeof(apellidoMaterno) == "string" && typeof(apellidoPaterno) =="string" )
+              {
+                alert(apellidoPaterno + " " + apellidoMaterno)
+              }else{
+                  alert("Datos ingresados no son textos , favor ingresas solo textos")
+              }
+              
+           }
+
+           function showNameAndLastName(){
+
+            let nombre = document.getElementById("inputNombre2").value
+              let apellido = document.getElementById("inputApellido").value
+              
+              if(typeof(apellidoMaterno) == "string" && typeof(apellidoPaterno) =="string" )
+              {
+                alert(nombre + " " + apellido)
+              }else{
+                  alert("Datos ingresados no son textos , favor ingresas solo textos")
+              }
+              
+              
+           }
+
+           function showNumber(){
+               let num1 = document.getElementById("inputNumero1").value
+               let num2 =  document.getElementById("inputNumero2").value
+
+              
+
+               if(typeof(num1) == "string" && typeof(num2) =="string"){
+                   num1 = parseInt(num1)
+                   num2 = parseInt(num2)
+                   let total = num1 + num2
+                   if(typeof(total) ==="number"){
+                    alert("Total : " + total)
+
+                   }
+                   else{
+                    alert("Favor ingresar solo números")
+                   }
+                
+               }
+               else{
+                alert("Datos ingresados no son textos , favor ingresas solo textos")
+               }
+
+
+           }
+
+           
+        </script>
+    </head>
+    <body>
+        <h3>Ejercicio Nº1</h3>
+        <label id="lblNombre" for="txt"><b>Ingrese su Nombre </b></label> 
+        <input type="text" id="inputNombre" placeholder="Ingrese Nombre"> 
+        <button onclick="showName()">Mostrar</button>
+
+        <h3>Ejercicio Nº2</h3>
+        <label id="lblApePaterno" for="txt"><b>Ingrese su Apellido Paterno </b></label> 
+        <input type="text" id="inputApePaterno" placeholder="Ingrese Apellido Paterno"> 
+        <label id="lblApeMaterno" for="txt"><b>Ingrese su Apellido Materno </b></label> 
+        <input type="text" id="inputApeMaterno" placeholder="Ingrese Apellido Materno"> 
+        <button onclick="showLastName()">Mostrar</button>
+
+        <h3>Ejercicio Nº3</h3>
+        <label id="lblNombre2" for="txt"><b>Ingrese su Nombre </b></label> 
+        <input type="text" id="inputNombre2" placeholder="Ingrese Nombre"> 
+        <label id="lblApellido" for="txt"><b>Ingrese su Apellido </b></label> 
+        <input type="text" id="inputApellido" placeholder="Ingrese Apellido"> 
+        <button onclick="showNameAndLastName()">Mostrar</button>
+
+        <h3>Ejercicio Nº4</h3>
+        <label id="lblNumero1" for="txt"><b>Ingrese un Número </b></label> 
+        <input type="number" id="inputNumero1" placeholder="Ingrese cualquier número"> 
+        <label id="lblNumero2" for="txt"><b>Ingrese un Número</b></label> 
+        <input type="number" id="inputNumero2" placeholder="Ingrese cualquier número"> 
+        <button onclick="showNumber()">Mostrar</button>
+
+    
+    </body>
+</html>

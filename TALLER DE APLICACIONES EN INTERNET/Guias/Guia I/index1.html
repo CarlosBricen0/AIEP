@@ -1,0 +1,154 @@
+<html>
+    <head>
+        <title>Guía número uno - I </title>
+        <meta http-equiv=”Content-Type” content=”text/html; charset=UTF-8″ />
+        <style>
+
+            .bold{
+                font-weight: bold;
+            }
+            p{
+                width: 100%;
+              /*   font-size: 12px; */
+            }
+
+
+
+
+
+
+        </style>
+    </head>
+    <body>
+        <h1>Este texto esta marcado como titulo de texto</h1>
+        <p>El texto que se describe en esta parte esta definido como párrafo dentro de la estructura del documento.<b>Procederemos a destacar esta parte para ayudar al SEO y esta otra parte solo para el usuario</b></p>
+        <h2>Titulo de otro texto pero menor que el anterior</h2>
+        <p>texto simple de párrafo por debajo del titulo.<i>Este texto se encuentra enfatizado</i></p>
+        <h3>Titulo de otro texto pero menor que el anterior:</h3>
+        <p>Texto simple de párrafo por debajo del titulo. <b>Negrita, solo usuario</b><i> cursiva enfatizada </i><b>para el SEO</b></p>
+
+
+        <h1>Mostraremos una tabla estructurada</h1>
+
+        <table border="1" style="width: 300px;">
+            <thead>
+                <tr>
+                    <th >Equipo</th>
+                    <th>Partidos</th>
+                    <th>Puntos</th>
+                    <th>Dif. Gol</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td >La Serena</td>
+                    <td>7</td>
+                    <td>21</td>
+                    <td>+2</td>
+                </tr>
+                <tr>
+                    <td >Temuco</td>
+                    <td>7</td>
+                    <td>16</td>
+                    <td>+6</td>
+                </tr>
+                <tr>
+                    <td >Rangers</td>
+                    <td>7</td>
+                    <td>15</td>
+                    <td>+8</td>
+                </tr>
+                <tr>
+                    <td >U.De Chile</td>
+                    <td>7</td>
+                    <td>14</td>
+                    <td>+4</td>
+                </tr>
+                <tr>
+                    <td >Colo Colo</td>
+                    <td>7</td>
+                    <td>10</td>
+                    <td>+1</td>
+                </tr>
+                <tr>
+                    <td >Iquique</td>
+                    <td>7</td>
+                    <td>9</td>
+                    <td>+1</td>
+                </tr>
+                <tr>
+                    <td >Coquimbo</td>
+                    <td>7</td>
+                    <td>4</td>
+                    <td>-3</td>
+                </tr>
+                <tr>
+                    <td >Audax Italiano</td>
+                    <td>7</td>
+                    <td>2</td>
+                    <td>-2</td>
+                </tr>
+                <tr>
+                    <td >Palestino</td>
+                    <td>7</td>
+                    <td>0</td>
+                    <td>-200</td>
+                </tr>
+               
+               <!--  <tr>
+                    <u>Vista el buscador de google</u>
+                </tr> -->
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="4"><u><a href="https://www.google.cl">Vista el buscador de google</a></u></td></th>
+                    <!-- <div><u>Vista el buscador de google</u></td></div> -->
+                </tr>
+            </tfoot>
+           <!--  <tr>
+                <td ></td><u>Vista el buscador de google</u></td>
+            </tr> -->
+         <!--    <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr> -->
+        </table> 
+
+    <h1>Formulario de Registro</h1>
+
+    <div>
+        <form action="">
+
+            <label id="lblCuenta" for="txt"><b>Seleccione</b></label> 
+            <input type="checkbox" value="1" >Me gusta vacacionar
+            <input type="checkbox" value="2" >Me gusta Jugar Deportes
+            <input type="checkbox" value="3" >Me gusta estudiar <br>
+
+            <label for="txtNombCliente"><b>Ingrese de Nombre</b></label>
+            <input type="text" id="txtNombCliente" name="txtNombCliente" style="width: 200px;" placeholder="Puede ingresar tu nombre."><br>
+
+            <label for="txtRutCliente"><b>Ingreso de Rut</b></label>
+            <input type="text" id="txtRutCliente" name="txtRutCliente" style="width: 200px;" placeholder="Puedes ingresar tu rut"><br>
+
+            <label for="txtClaveCliente"><b>Ingreso de Clave</b></label>
+            <input type="text" id="txtClaveCliente" name="txtClaveCliente" style="width: 200px;" placeholder="Puedes ingresar tu password"><br>
+
+            <label for="modo"><b>Selecciona modo</b></label>
+            <select name="registro" id="registro" style="width: 200px;">
+                <option value="1">Registro directo</option>
+                <option value="2">Registro Indirecto</option>
+                <option value="3">Otros</option>
+            </select><br>
+
+            <label><b>Confirme</b></label>
+            <input type="radio" name="rd" value="1" > Si
+            <input type="radio"name="rd" value="1" > No<br>
+
+            <input type="submit" onclick="validarFormulario()" value="Registrar">
+        </form>
+        <p>Final de la página</p>
+    </div>
+    </body>
+</html>
