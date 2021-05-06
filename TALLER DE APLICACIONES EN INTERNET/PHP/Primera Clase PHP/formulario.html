@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>Form-Post</title>
+        <link rel="stylesheet" href="css/estilo.css">
+    </head>
+    <body>
+        <header>
+            <h1>AIEP</h1>
+            <h2>Formulario</h2>
+        </header>
+
+        <form action="proceso.php" method="POST">
+            <fieldset>
+                <legend>Datos del Encuestado</legend>
+                <p>
+                    <label for="txtNombre1">Primer Nombre:</label>
+                    <input type="text" name="nombre1" id="txtNombre1">
+
+                    <label for="txtNombre2">Segundo Nombre:</label>
+                    <input type="text" name="nombre2" id="txtNombre2">
+
+                    <label for="txtApellido1">Primer Apellido:</label>
+                    <input type="text" name="apellido1" id="txtApellido1">
+
+                    <label for="txtApellido2">Segundo Apellido:</label>
+                    <input type="text" name="apellido2" id="txtApellido2">
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Color de Preferencia</legend>
+                <p>
+                    <label>Colores</label>
+                    <input type="radio" name="color" id="color1" value="1"> <label class="enlinea" for="color1">Verde</label>
+                    <input type="radio" name="color" id="color2" value="2"> <label class="enlinea" for="color2">Azul</label>
+                    <input type="radio" name="color" id="color3" value="3"> <label class="enlinea" for="color3">Rojo</label>
+                    <input type="radio" name="color" id="color4" value="4"> <label class="enlinea" for="color4">Otro</label>
+                </p>
+            </fieldset>
+
+            <p class="centrado">
+                <input type="submit" value="Finalizar Encuesta" id="btnEncuesta">
+            </p>
+
+        </form>
+    </body>
+</html>

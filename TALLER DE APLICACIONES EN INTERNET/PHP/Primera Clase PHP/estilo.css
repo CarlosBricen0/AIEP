@@ -1,0 +1,54 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 90%;
+    margin: 0 auto;
+}
+header{
+    text-align: center;
+}
+h1, h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+h1{
+    font-size: 3em;
+}
+fieldset{
+    margin: 1em auto;
+    border-radius: 4px;
+}
+legend{
+    font-size: 1.3em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+label{
+    font-weight: bold;
+    display: block;
+}
+input[type=text]{
+    background-color:mintcream;
+    width:100%;
+    border: 1px solid blue;
+    border-radius: 6px 6px 6px 6px;
+    font-size: 20px;
+    padding: 5px;
+}
+input[type=text]:focus{
+    background-color: paleturquoise;
+}
+input[type=text]:hover{
+    background-color: yellowgreen;
+}
+#btnEncuesta{
+    padding:0.5em;
+    border-radius: 4px;
+    background-color: royalblue;
+    color:white;
+    cursor:pointer;
+}
+.enlinea{
+    display:inline;
+}
+.centrado{
+    text-align: center;
+}
