@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <meta http-equiv=”Content-Type” content=”text/html; charset=UTF-8″ />
+        <title>Trabajo en Clases - I</title>
+        <script type="text/javascript">
+
+            function showNumber(){
+
+                let number = document.getElementById("txtNumber").value;
+                
+
+                if(!isNaN(number)){
+
+                    if(number > 0 && number <= 100){
+                        alert("El Número : " + number + "  está en el Rango de 1 a 100 ");
+                    }
+                    else{
+                        alert("Ingrese un número que sea entre 1 y 100");
+                    }
+                }
+                else{
+                    alert("Ingrese un número valido");
+                }
+
+            }
+        </script>
+        <style>
+
+            body{
+                background-color: pink;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            div{
+                width: 200px;
+                border: 1px solid black;
+                border-radius: 20px;
+                height: 100px;
+                padding: 20px;
+                margin: auto;
+                background-color: purple;
+            }
+            h1{
+                text-align: center;
+            }
+            
+            #lblNumber{
+                color: white;
+            }
+           
+
+        </style>
+    </head>
+    <body>
+        <h1><em> Ejercicio uno</em></h1>
+        
+            <div>
+                <label id="lblNumber" for="txtNumber"  ><b>Ingrese un número</b></label> <br><br>
+                <input id="txtNumber" type="number" placeholder="Ingrese Número"><br><br>
+                <button id ="btnNumber" type="submit" onclick="showNumber()">Mostrar</button>
+            </div>
+       
+    </body>
+</html>

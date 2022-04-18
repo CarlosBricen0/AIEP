@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <title>Trabajo en Clases - I</title>
+        <script type="text/javascript">
+            function changeColor (color){
+                
+                document.bgColor= color;
+            }
+        
+        </script>
+        <style>
+          BODY{ 
+                font-family: Arial, Helvetica, sans-serif; 
+                text-align: center;
+            }
+          
+            div{
+                width: 450px;
+                
+                border-radius: 20px;
+                height: 260px;
+                padding: 20px;
+                margin: auto;
+                display: inline-grid;
+               
+            }
+            h1{
+                text-align: center;
+            }
+            label{
+                border: 2px solid black;
+                border-radius: 20px;
+                padding: 5px;
+                margin: auto;
+                font-size: 60px;
+            }
+           
+           
+         
+        </style>
+    </head>
+    <body>
+        <h1>Ejercicio 3</h1>
+        <div>
+            <label onmouseover="changeColor('red')" id="lblRojo">Rojo</label><br><br>
+            <label onmouseover="changeColor('white')" id="lblBlanco">Blanco</label><br><br>
+            <label onmouseover="changeColor('yellow')"id="lblAmarillo">Amarillo</label><br><br>
+            <label onmouseover="changeColor('green')"id="lblVerde">Verde</label><br><br>
+            <label onmouseover="changeColor('blue')" id="lblAzul"> Azul</label><br><br>
+        </div>
+    </body>
+</html>

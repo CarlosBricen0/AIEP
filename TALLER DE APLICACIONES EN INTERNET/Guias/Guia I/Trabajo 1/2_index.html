@@ -1,0 +1,84 @@
+<html>
+    <head>
+        <meta http-equiv=”Content-Type” content=”text/html; charset=UTF-8″ />
+        <title>Trabajo en Clases - I</title>
+        <script type="text/javascript">
+            const uf = "26600"
+
+            function showNumberUf(){
+
+                let numberClp = document.getElementById("txtNumberClP").value;
+                if(!isNaN(numberClp)){
+
+                    let total =  numberClp / uf;
+                    alert("La conversion de Peso Chileno a UF es :  " + parseFloat(total) + " .");
+                }   
+                else{
+                 alert("Ingrese un número valido");
+                }
+            }
+
+            function showNumberClP(){
+
+                let numberUf = document.getElementById("txtNumberUF").value;
+                if(!isNaN(numberUf)){
+
+                    let total =  numberUf * uf;
+                    alert("La conversion de UF a Peso Chileno es :  " + parseFloat(total) + " .");
+                }   
+                else{
+                    alert("Ingrese un número valido");
+                }
+            }
+        </script>
+        <style>
+            BODY{ 
+                font-family: Arial, Helvetica, sans-serif; 
+                background-color: pink;
+                text-align: center;
+            }
+          
+            div{
+                width: 450px;
+                border: 1px solid black;
+                border-radius: 20px;
+                height: 260px;
+                padding: 20px;
+                margin: auto;
+                background-color: darkgreen;
+            }
+            h1{
+                text-align: center;
+            }
+           
+           label{
+                color: white;
+            }
+            input{
+                width: 450px;
+                height: 30px;
+            }
+            button{
+                width: 450px;
+                height: 30px;
+                padding: 15px;
+                text-align: center;
+            }
+
+           
+
+        </style>
+    </head>
+    <body>
+        <h1>Ejercicio Dos</h1>
+        <div>
+            <label id="lblNumberCLP" for="txtNumberClP"  ><b>Ingrese un número en Peso Chileno</b></label> <br><br>
+            <input id="txtNumberClP" type="number" placeholder="Ingrese un número en Peso Chileno"><br><br>
+            <button id ="btnNumberCLP" type="submit" onclick="showNumberUf()">Mostrar en UF</button><br><br>
+
+            <label id="lblNumberUF" for="txtNumberUF"  ><b>Ingrese un número en UF</b></label><br><br> 
+            <input id="txtNumberUF" type="number" placeholder="Ingrese un número en UF"><br><br>
+            <button id ="btnNumberUF" type="submit" onclick="showNumberClP()">Mostrar en CLP</button>
+        </div>
+    </body>
+</html>

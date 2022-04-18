@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <title>Formulario 1 - AIEP</title>
+        <meta http-equiv=”Content-Type” content=”text/html; charset=UTF-8″ />
+        <link rel="stylesheet" href="css/style.css">
+        <script type="text/javascript" src="js/script_prueba.js"></script>
+    </head>
+    <body>        
+    <h1>Formulario de Registro - Alumno</h1>
+
+    <div>
+        <form >
+
+
+            <label for="txtRut">Ingrese su Rut</label>
+            <input type="number" id="txtRut" name="txtRut"  placeholder="Ingrese tu Rut">
+
+            <label for="txtPrimNombre">Ingrese su primer Nombre</label>
+            <input type="text" id="txtPrimNombre" name="txtPrimNombre" placeholder="Ingrese Primer Nombre">
+
+            <label for="txtSegNombre">Ingrese su segundo Nombre</label>
+            <input type="text" id="txtSegNombre" name="txtSegNombre" placeholder="Ingrese Segundo Nombre">
+
+            <label for="txtPrimApe">Ingrese su primer Apellido</label>
+            <input type="text" id="txtPrimApe" name="txtPrimApe" placeholder="Ingrese primer Apellido">
+
+            <label for="txtSegApe">Ingrese su segundo Apellido</label>
+            <input type="text" id="txtSegApe" name="txtSegApe" placeholder="Ingrese Segundo Apellido">
+
+            <label for="txtFechaNacimiento">Ingrese su Fecha de Nacimiento</label>
+            <input type="date" id="inputNacimiento" name="inputNacimiento">
+
+            <label for="txtEdad">Ingrese su Edad</label>
+            <input type="number" id="txtEdad" name="txtEdad" placeholder="Ingrese su Edad">
+
+            <label for="txtSexo">Ingrese su Sexo</label>
+            <select name="selectSexo" id="selectSexo">
+                <option value="FEMENINO">Femenino</option>
+                <option value="MASCULINO">Masculino</option>
+            </select>
+
+            <label for="txtActividad">¿Suscripción a actividades Adicionales?</label>
+            <select name="selectActividad" id="selectActividad">
+                <option value="SI">Si</option>
+                <option value="NO">No</option>
+            </select>
+
+
+            <label for="lblCurso">Seleccione  Curso</label>
+            <select name="selectCurso" id="selectCurso">
+                <option value="1">Programación</option>
+                <option value="2">Base de Datos</option>
+                <option value="3">Redes</option>
+            </select>
+
+            <label for="lblSemestre">Seleccione  Semestre</label>
+            <select name="selectSemestre" id="selectSemestre">
+                <option value="1">Primero</option>
+                <option value="2">Segundo</option>
+                <option value="3">Tercero</option>
+                <option value="4">Cuarto</option>
+            </select>
+
+
+            <label for="txtComentario">Ingrese su Comentario</label>
+            <input type="text" id="txtComentario" name="txtComentario" placeholder="Ingrese su Comentario">
+
+            <label for="txtGrupo">Ingrese su Grupo</label>
+            <input type="text" id="txtGrupo" name="txtGrupo" placeholder="Ingrese su Grupo">
+
+
+            <input id="inputRegistro" type="button" onclick="registro()" value="Registro">
+            <input id="inputLimpiar" type="button" onclick="limpiar()" value="Limpiar">
+        </form>
+    </div>
+    </body>
+</html>
